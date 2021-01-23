@@ -10,7 +10,8 @@ replaced by the generator over the entire sequence, rather than a small subset o
 
 ## Weights
 
-* [**`electra-small-discriminator-da-256-cased`**][danish-small-electra]: 12-layer, 256-hidden, 4-heads
+* [**`electra-small-discriminator-da-256-cased`**][danish-small-electra-discriminator]: 12-layer, 256-hidden, 4-heads
+* [**`electra-small-generator-da-256-cased`**][danish-small-electra-generator]: 12-layer, 64-hidden, 1-heads
 
 ## Usage
 
@@ -34,21 +35,21 @@ All scores reported, are averages calculated from (N=5) random seed runs for eac
 
 The table below shows the average F1 scores on the test+dev set on the entities `LOC`, `ORG`, `PER` and `MISC`. Notice that `AVG` refers to the weighted average.
 
-| **Model**                                                           | **Params** | **LOC** |  **ORG** |  **PER** |  **MISC** |     **AVG**      |
-|---------------------------------------------------------------------|------------|---------|----------|----------|-----------|------------------|
-| [**bert-base-multilingual-cased**][multilingual-base-bert]          |   ~177M    |  88.03  |  76.92   |  92.24   |  78.03    |  84.49 (σ=0.40)  |
-| [**danish-bert-uncased-v2**][danish-base-bert]                      |   ~110M    |  88.25  |  75.42   |  94.05   |  75.73    |  84.20 (σ=0.32)  |
-| [**electra-small-discriminator-da-256-cased**][danish-small-electra]|   ~13.3M   |  85.93  |  70.06   |  88.76   |  72.79    |  80.12 (σ=0.29)  |
+| **Model**                                                                         | **Params** | **LOC** |  **ORG** |  **PER** |  **MISC** |     **AVG**      |
+|-----------------------------------------------------------------------------------|------------|---------|----------|----------|-----------|------------------|
+| [**bert-base-multilingual-cased**][multilingual-base-bert]                        |   ~177M    |  88.03  |  76.92   |  92.24   |  78.03    |  84.49 (σ=0.40)  |
+| [**danish-bert-uncased-v2**][danish-base-bert]                                    |   ~110M    |  88.25  |  75.42   |  94.05   |  75.73    |  84.20 (σ=0.32)  |
+| [**electra-small-discriminator-da-256-cased**][danish-small-electra-discriminator]|   ~13.3M   |  85.93  |  70.06   |  88.76   |  72.79    |  80.12 (σ=0.29)  |
 
 #### Part-of-speech tagging
 
 The table below shows the average F1 scores on the test+dev set. Notice that `F1-score` refers to the weighted average.
 
-| **Model**                                                           | **Params** |      **F1-score**     |
-|---------------------------------------------------------------------|------------|-----------------------|
-| [**bert-base-multilingual-cased**][multilingual-base-bert]          |   ~177M    |     97.41 (σ=0.08)    |
-| [**danish-bert-uncased-v2**][danish-base-bert]                      |   ~110M    |     98.05 (σ=0.06)    |
-| [**electra-small-discriminator-da-256-cased**][danish-small-electra]|   ~13.3M   |     97.42 (σ=0.06)    |
+| **Model**                                                                         | **Params** |      **F1-score**     |
+|-----------------------------------------------------------------------------------|------------|-----------------------|
+| [**bert-base-multilingual-cased**][multilingual-base-bert]                        |   ~177M    |     97.41 (σ=0.08)    |
+| [**danish-bert-uncased-v2**][danish-base-bert]                                    |   ~110M    |     98.05 (σ=0.06)    |
+| [**electra-small-discriminator-da-256-cased**][danish-small-electra-discriminator]|   ~13.3M   |     97.42 (σ=0.06)    |
 
 ## Data
 
@@ -73,4 +74,5 @@ The final dataset consists of `14,483,456` precomputed tensors of length 256.
 
 [multilingual-base-bert]: https://huggingface.co/bert-base-multilingual-cased
 [danish-base-bert]: https://github.com/botxo/nordic_bert
-[danish-small-electra]: https://huggingface.co/sarnikowski/electra-small-discriminator-da-256-cased
+[danish-small-electra-discriminator]: https://huggingface.co/sarnikowski/electra-small-discriminator-da-256-cased
+[danish-small-electra-generator]: https://huggingface.co/sarnikowski/electra-small-generator-da-256-cased
