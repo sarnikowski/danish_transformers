@@ -12,13 +12,14 @@ Details on how to use the models, can be found by clicking the architecture head
 ### [ConvBERT](convbert/README.md)
 
 * [**`convbert-small-da-cased`**][danish-small-convbert-cased]: 12-layer, 256-hidden, 4-heads**
+* [**`convbert-medium-small-da-cased`**][danish-medium-small-convbert-cased]: 12-layer, 384-hidden, 6-heads**
 
 ### [ELECTRA](electra/README.md)
 
 * [**`electra-small-discriminator-da-256-cased`**][danish-small-electra-discriminator]: 12-layer, 256-hidden, 4-heads
 * [**`electra-small-generator-da-256-cased`**][danish-small-electra-generator]: 12-layer, 64-hidden, 1-heads
 
-**Pretrained using [ELECTRA][electra-paper] pretraining approach. Make sure to read details on how to finetune this model [here](convbert/README.md).
+**Pretrained using [ELECTRA][electra-paper] pretraining approach.
 
 ## Benchmarks
 
@@ -35,8 +36,10 @@ The table below shows the `F1-scores` on the test+dev set on the entities `LOC`,
 |-----------------------------------------------------------------------------------|------------|---------|----------|----------|-----------|------------------------|
 | [**bert-base-multilingual-cased**][multilingual-base-bert]                        |   ~177M    |  87.02  |  75.24   |  91.28   |  75.94    |     83.18 (σ=0.81)     |
 | [**danish-bert-uncased-v2**][danish-base-bert]                                    |   ~110M    |  87.40  |  75.43   |  93.92   |  76.21    |     84.19 (σ=0.75)     |
-| [**electra-small-da-cased**][danish-small-electra-discriminator]                  |   ~13.3M   |  86.30  |  70.05   |  88.34   |  71.31    |     79.63 (σ=0.22)     |
+| +++++++++++++++++++++++++++                                                       |   +++++    |  ++++   |  ++++    |  ++++    |  ++++     |     +++++++++++        |
+| [**convbert-medium-small-da-cased**][danish-medium-small-convbert-cased]          |   ~24.3M   |  88.61  |  75.97   |  90.15   |  77.07    |     83.54 (σ=0.55)     |
 | [**convbert-small-da-cased**][danish-small-convbert-cased]                        |   ~12.9M   |  85.86  |  71.21   |  89.07   |  73.50    |     80.76 (σ=0.40)     |
+| [**electra-small-da-cased**][danish-small-electra-discriminator]                  |   ~13.3M   |  86.30  |  70.05   |  88.34   |  71.31    |     79.63 (σ=0.22)     |
 
 #### Part-of-speech Tagging
 
@@ -46,8 +49,10 @@ The table below shows the `F1-scores` on the test+dev set over (N=5) runs.
 |-----------------------------------------------------------------------------------|------------|-------------------|
 | [**bert-base-multilingual-cased**][multilingual-base-bert]                        |   ~177M    |   97.42 (σ=0.09)  |
 | [**danish-bert-uncased-v2**][danish-base-bert]                                    |   ~110M    |   98.08 (σ=0.05)  |
-| [**electra-small-da-cased**][danish-small-electra-discriminator]                  |   ~13.3M   |   97.42 (σ=0.05)  |
+| +++++++++++++++++++++++++++                                                       |   +++++    |   +++++++++++     |
+| [**convbert-medium-small-da-cased**][danish-medium-small-convbert-cased]          |   ~24.3M   |   97.92 (σ=0.03)  |
 | [**convbert-small-da-cased**][danish-small-convbert-cased]                        |   ~12.9M   |   97.32 (σ=0.03)  |
+| [**electra-small-da-cased**][danish-small-electra-discriminator]                  |   ~13.3M   |   97.42 (σ=0.05)  |
 
 
 ## Data
@@ -84,6 +89,7 @@ This work is licensed under a [Creative Commons Attribution 4.0 International Li
 [multilingual-base-bert]: https://huggingface.co/bert-base-multilingual-cased
 [danish-base-bert]: https://github.com/botxo/nordic_bert
 [danish-small-convbert-cased]: https://huggingface.co/sarnikowski/convbert-small-da-cased
+[danish-medium-small-convbert-cased]: https://huggingface.co/sarnikowski/convbert-medium-small-da-cased
 [danish-small-electra-discriminator]: https://huggingface.co/sarnikowski/electra-small-discriminator-da-256-cased
 [danish-small-electra-generator]: https://huggingface.co/sarnikowski/electra-small-generator-da-256-cased
 
