@@ -16,6 +16,7 @@ The models presented here are trained using [ELECTRA][electra-paper] pretraining
 ## Weights
 
 * [**`convbert-small-da-cased`**][danish-small-convbert-cased]: 12-layer, 256-hidden, 4-heads
+* [**`convbert-medium-small-da-cased`**][danish-medium-small-convbert-cased]: 12-layer, 384-hidden, 6-heads
 
 ## Usage
 
@@ -24,9 +25,10 @@ Here is an example on how to load the model in [PyTorch](https://pytorch.org/) u
 ```python
 from transformers import ConvBertTokenizer, ConvBertModel
 
-tokenizer = ConvBertTokenizer.from_pretrained("sarnikowski/convbert-small-da-cased")
-model = ConvBertModel.from_pretrained("sarnikowski/convbert-small-da-cased")
+tokenizer = ConvBertTokenizer.from_pretrained("sarnikowski/convbert-medium-small-da-cased")
+model = ConvBertModel.from_pretrained("sarnikowski/convbert-medium-small-da-cased")
 ```
 
 [danish-small-convbert-cased]: https://huggingface.co/sarnikowski/convbert-small-da-cased
+[danish-medium-small-convbert-cased]: https://huggingface.co/sarnikowski/convbert-medium-small-da-cased
 [electra-paper]: https://arxiv.org/abs/2003.10555
