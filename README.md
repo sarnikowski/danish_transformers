@@ -83,8 +83,8 @@ to cite this work please use
 ```
 @inproceedings{danish-transformers,
   title = {Danish Transformers},
-  author = {Sarnikowski, Philip Tamimi},
-  year = {2021},
+  author = {Tamimi-Sarnikowski, Philip},
+  year = {2020},
   publisher = {{GitHub}},
   url = {https://github.com/sarnikowski}
 }
