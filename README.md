@@ -77,6 +77,19 @@ The final dataset consists of `14,483,456` precomputed tensors of length 256.
 * Daniel Varab, Natalie Schluter. 2020. [DaNewsroom: A Large-scale Danish Summarisation Dataset](https://www.aclweb.org/anthology/2020.lrec-1.831/)
 * Rasmus Hvingelby, Amalie B. Pauli, Maria Barrett, Christina Rosted, Lasse M. Lidegaard and Anders Søgaard. 2020. [DaNE: A Named Entity Resource for Danish](http://www.lrec-conf.org/proceedings/lrec2020/pdf/2020.lrec-1.565.pdf)
 
+## Cite this work
+
+to cite this work please use
+```
+@inproceedings{danish-transformers,
+  title = {Danish Transformers},
+  author = {Sarnikowski, Philip Tamimi},
+  year = {2021},
+  publisher = {{GitHub}},
+  url = {https://github.com/sarnikowski}
+}
+```
+
 ## License
 
 [![CC BY 4.0][cc-by-image]][cc-by]
